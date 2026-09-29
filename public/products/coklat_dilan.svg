@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dilanBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="wrapperBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="50%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="chocBar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="60%" stop-color="#451a03"/>
+      <stop offset="100%" stop-color="#291104"/>
+    </linearGradient>
+    <filter id="dilanShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="200" height="200" rx="32" fill="url(#dilanBg)"/>
+
+  <!-- Star accents -->
+  <polygon points="160,25 163,33 172,33 165,38 168,46 160,41 152,46 155,38 148,33 157,33" fill="#fbbf24" opacity="0.8"/>
+  <polygon points="40,45 42,50 48,50 43,53 45,58 40,55 35,58 37,53 32,50 38,50" fill="#60a5fa" opacity="0.6"/>
+
+  <!-- Chocolate Bar Dilan with wrapper -->
+  <g filter="url(#dilanShadow)" transform="rotate(-15 100 100)">
+    <!-- Exposed Chocolate Wafer Bar -->
+    <rect x="55" y="45" width="90" height="50" rx="8" fill="url(#chocBar)"/>
+    <!-- Crisp Rice Crunches on Chocolate Surface -->
+    <circle cx="65" cy="55" r="3" fill="#d97706"/>
+    <circle cx="80" cy="50" r="3.5" fill="#f59e0b"/>
+    <circle cx="95" cy="58" r="3" fill="#d97706"/>
+    <circle cx="110" cy="52" r="3" fill="#f59e0b"/>
+    <circle cx="125" cy="60" r="3.5" fill="#d97706"/>
+    <circle cx="72" cy="70" r="3.5" fill="#f59e0b"/>
+    <circle cx="88" cy="68" r="3" fill="#d97706"/>
+    <circle cx="105" cy="72" r="3.5" fill="#f59e0b"/>
+    <circle cx="120" cy="70" r="3" fill="#d97706"/>
+    <circle cx="135" cy="65" r="3" fill="#f59e0b"/>
+
+    <!-- Foil Zigzag Edge -->
+    <path d="M50 85 L55 92 L60 85 L65 92 L70 85 L75 92 L80 85 L85 92 L90 85 L95 92 L100 85 L105 92 L110 85 L115 92 L120 85 L125 92 L130 85 L135 92 L140 85 L145 92 L150 85" stroke="#cbd5e1" stroke-width="3" fill="#e2e8f0"/>
+
+    <!-- Blue Wrapper Bottom Half -->
+    <rect x="50" y="90" width="100" height="65" rx="6" fill="url(#wrapperBlue)"/>
+    <rect x="50" y="152" width="100" height="6" fill="#1e3a8a"/>
+    
+    <!-- Dilan Brand Text on wrapper -->
+    <text x="100" y="122" font-family="sans-serif" font-weight="900" font-size="16" fill="#fde047" text-anchor="middle" font-style="italic">DILAN</text>
+    <text x="100" y="136" font-family="sans-serif" font-weight="bold" font-size="8" fill="#ffffff" text-anchor="middle" letter-spacing="1">CHOCOLATE CRUNCHY</text>
+  </g>
+
+  <!-- Product Label Banner -->
+  <rect x="25" y="152" width="150" height="32" rx="12" fill="#1d4ed8" filter="url(#dilanShadow)"/>
+  <text x="100" y="173" font-family="sans-serif" font-weight="900" font-size="13" fill="#ffffff" text-anchor="middle" letter-spacing="1">COKLAT DILAN</text>
+</svg>

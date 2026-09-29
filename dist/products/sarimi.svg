@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="noodleBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef2f2"/>
+      <stop offset="100%" stop-color="#fee2e2"/>
+    </linearGradient>
+    <linearGradient id="bowlGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="50%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <filter id="bowlShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="200" height="200" rx="32" fill="url(#noodleBg)"/>
+
+  <!-- Steam coming from noodle bowl -->
+  <path d="M75 55 Q70 40 78 30 Q85 20 80 12" stroke="#fca5a5" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M100 50 Q95 35 105 25 Q112 15 106 8" stroke="#f87171" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M125 55 Q130 40 122 30 Q115 20 120 12" stroke="#fca5a5" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Bowl and Noodles Group -->
+  <g filter="url(#bowlShadow)">
+    <!-- Bowl Exterior -->
+    <path d="M40 90 Q38 150 100 155 Q162 150 160 90 Z" fill="url(#bowlGrad)"/>
+    <ellipse cx="100" cy="155" rx="35" ry="8" fill="#991b1b"/>
+    <ellipse cx="100" cy="90" rx="60" ry="18" fill="#fecaca"/>
+    <!-- Broth -->
+    <ellipse cx="100" cy="90" rx="55" ry="15" fill="#f59e0b"/>
+
+    <!-- Noodles Swirls -->
+    <path d="M60 88 Q70 78 85 88 Q100 98 115 88 Q130 78 140 88" stroke="#fde047" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M65 94 Q80 84 95 94 Q110 104 125 94 Q135 86 142 93" stroke="#fef08a" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M72 82 Q88 74 102 83 Q118 92 130 82" stroke="#fef08a" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Meatballs (Bakso) -->
+    <circle cx="80" cy="85" r="11" fill="#78350f"/>
+    <circle cx="80" cy="85" r="9" fill="#92400e"/>
+    <circle cx="120" cy="88" r="12" fill="#78350f"/>
+    <circle cx="120" cy="88" r="10" fill="#92400e"/>
+    
+    <!-- Egg Half -->
+    <ellipse cx="100" cy="82" rx="11" ry="8" fill="#ffffff" transform="rotate(-15 100 82)"/>
+    <circle cx="99" cy="82" r="5" fill="#ea580c"/>
+
+    <!-- Green Onion Garnish -->
+    <rect x="68" y="96" width="6" height="4" rx="1" fill="#16a34a" transform="rotate(20 71 98)"/>
+    <rect x="110" y="76" width="6" height="4" rx="1" fill="#22c55e" transform="rotate(-30 113 78)"/>
+    <rect x="132" y="90" width="6" height="4" rx="1" fill="#15803d" transform="rotate(45 135 92)"/>
+
+    <!-- Chopsticks -->
+    <line x1="110" y1="45" x2="175" y2="105" stroke="#fef3c7" stroke-width="5" stroke-linecap="round"/>
+    <line x1="120" y1="40" x2="182" y2="100" stroke="#fef3c7" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Product Label Banner -->
+  <rect x="25" y="152" width="150" height="32" rx="12" fill="#b91c1c" filter="url(#bowlShadow)"/>
+  <text x="100" y="173" font-family="sans-serif" font-weight="900" font-size="13" fill="#ffffff" text-anchor="middle" letter-spacing="1">MIE SARIMI</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="crunchBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff1f2"/>
+      <stop offset="100%" stop-color="#ffe4e6"/>
+    </linearGradient>
+    <linearGradient id="crunchChoc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#831843"/>
+      <stop offset="50%" stop-color="#be185d"/>
+      <stop offset="100%" stop-color="#4c0519"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#3b1502"/>
+    </linearGradient>
+    <filter id="crunchShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="200" height="200" rx="32" fill="url(#crunchBg)"/>
+
+  <!-- Energy Burst lines -->
+  <path d="M100 25 L100 15 M150 45 L158 38 M175 95 L185 95 M40 50 L32 42 M25 95 L15 95" stroke="#fb7185" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Crunchy Chocolate Bars -->
+  <g filter="url(#crunchShadow)">
+    <!-- Main Crunch Bar Block 1 -->
+    <rect x="50" y="65" width="100" height="42" rx="10" fill="url(#barGrad)" transform="rotate(-8 100 86)"/>
+    
+    <!-- Crispy Rice Nuggets on surface -->
+    <circle cx="70" cy="78" r="4" fill="#fbbf24"/>
+    <circle cx="85" cy="72" r="4.5" fill="#fef08a"/>
+    <circle cx="102" cy="80" r="4" fill="#fbbf24"/>
+    <circle cx="118" cy="74" r="4.5" fill="#fef08a"/>
+    <circle cx="132" cy="82" r="4" fill="#fbbf24"/>
+
+    <circle cx="78" cy="92" r="4.5" fill="#fef08a"/>
+    <circle cx="95" cy="90" r="4" fill="#fbbf24"/>
+    <circle cx="110" cy="94" r="4.5" fill="#fef08a"/>
+    <circle cx="125" cy="92" r="4" fill="#fbbf24"/>
+
+    <!-- Bar Block 2 (Cracked/Broken pieces) -->
+    <rect x="65" y="105" width="70" height="35" rx="8" fill="url(#barGrad)" transform="rotate(12 100 122)"/>
+    <circle cx="80" cy="115" r="4" fill="#fbbf24"/>
+    <circle cx="98" cy="120" r="4.5" fill="#fef08a"/>
+    <circle cx="115" cy="115" r="4" fill="#fbbf24"/>
+
+    <!-- Crumbs -->
+    <circle cx="150" cy="110" r="3" fill="#78350f"/>
+    <circle cx="158" cy="120" r="2" fill="#d97706"/>
+    <circle cx="48" cy="115" r="3" fill="#78350f"/>
+  </g>
+
+  <!-- Product Label Banner -->
+  <rect x="30" y="152" width="140" height="32" rx="12" fill="#be185d" filter="url(#crunchShadow)"/>
+  <text x="100" y="173" font-family="sans-serif" font-weight="900" font-size="13" fill="#ffffff" text-anchor="middle" letter-spacing="1">CHRUNCH</text>
+</svg>

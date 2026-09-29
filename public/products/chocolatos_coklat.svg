@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="chocoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf4ff"/>
+      <stop offset="100%" stop-color="#f5d0fe"/>
+    </linearGradient>
+    <linearGradient id="stickGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#451a03"/>
+      <stop offset="40%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#291104"/>
+    </linearGradient>
+    <linearGradient id="fillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b1502"/>
+      <stop offset="100%" stop-color="#552207"/>
+    </linearGradient>
+    <filter id="chocShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="200" height="200" rx="32" fill="url(#chocoBg)"/>
+
+  <!-- Swirls in background -->
+  <path d="M30 40 Q70 10 120 30 Q170 50 180 90" stroke="#fae8ff" stroke-width="8" fill="none" opacity="0.8"/>
+  <circle cx="160" cy="40" r="14" fill="#86198f" opacity="0.1"/>
+
+  <!-- Chocolatos Wafer Rolls (Diagonal) -->
+  <g filter="url(#chocShadow)">
+    <!-- Main Wafer Stick 1 -->
+    <g transform="rotate(-35 100 100)">
+      <!-- Outer Tube -->
+      <rect x="30" y="80" width="140" height="24" rx="12" fill="url(#stickGrad)"/>
+      <!-- Striped Spirals -->
+      <path d="M45 80 L35 104 M65 80 L55 104 M85 80 L75 104 M105 80 L95 104 M125 80 L115 104 M145 80 L135 104" stroke="#92400e" stroke-width="4"/>
+      <!-- Tip Hollow / Chocolate Filling -->
+      <ellipse cx="165" cy="92" rx="6" ry="12" fill="url(#fillGrad)"/>
+      <ellipse cx="165" cy="92" rx="4" ry="9" fill="#1c0a02"/>
+    </g>
+
+    <!-- Wafer Stick 2 behind -->
+    <g transform="rotate(-20 100 115)">
+      <rect x="25" y="105" width="135" height="20" rx="10" fill="url(#stickGrad)"/>
+      <path d="M45 105 L35 125 M65 105 L55 125 M85 105 L75 125 M105 105 L95 125 M125 105 L115 125" stroke="#92400e" stroke-width="3"/>
+      <ellipse cx="155" cy="115" rx="5" ry="10" fill="url(#fillGrad)"/>
+    </g>
+
+    <!-- Chocolate Splash Drips -->
+    <circle cx="165" cy="80" r="6" fill="#451a03"/>
+    <circle cx="178" cy="95" r="4.5" fill="#451a03"/>
+    <circle cx="170" cy="115" r="5" fill="#581c87"/>
+  </g>
+
+  <!-- Product Label Banner -->
+  <rect x="15" y="152" width="170" height="32" rx="12" fill="#701a75" filter="url(#chocShadow)"/>
+  <text x="100" y="173" font-family="sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle" letter-spacing="1">CHOCOLATOS COKLAT</text>
+</svg>

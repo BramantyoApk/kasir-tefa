@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tumblerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+    <linearGradient id="flaskGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="40%" stop-color="#0284c7"/>
+      <stop offset="80%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="capGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="tumblerShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="200" height="200" rx="32" fill="url(#tumblerBg)"/>
+
+  <!-- Cold Water Splash Sparkles -->
+  <path d="M150 40 Q165 45 160 60 Q150 50 150 40 Z" fill="#38bdf8" opacity="0.6"/>
+  <circle cx="165" cy="70" r="3.5" fill="#38bdf8" opacity="0.7"/>
+  <circle cx="40" cy="80" r="4" fill="#38bdf8" opacity="0.6"/>
+
+  <!-- Big Stainless/Insulated Tumbler -->
+  <g filter="url(#tumblerShadow)">
+    <!-- Tumbler Handle -->
+    <path d="M125 75 Q150 75 150 105 Q150 135 125 135" stroke="url(#capGrad)" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+    <!-- Tumbler Body -->
+    <path d="M72 65 L76 156 Q77 166 88 166 L118 166 Q129 166 130 156 L134 65 Z" fill="url(#flaskGrad)"/>
+
+    <!-- Metallic Highlight Strip -->
+    <path d="M96 65 L94 166 L102 166 L104 65 Z" fill="#ffffff" opacity="0.25"/>
+
+    <!-- Tumbler Neck / Ring -->
+    <rect x="74" y="58" width="58" height="8" rx="2" fill="#94a3b8"/>
+
+    <!-- Tumbler Cap / Lid -->
+    <rect x="70" y="44" width="66" height="15" rx="5" fill="url(#capGrad)"/>
+    <ellipse cx="103" cy="44" rx="33" ry="5" fill="#475569"/>
+
+    <!-- Reusable Straw -->
+    <rect x="110" y="18" width="8" height="30" rx="3" fill="#ffffff"/>
+    <rect x="110" y="18" width="8" height="6" fill="#0284c7"/>
+
+    <!-- Ice & Cold Emblem on Flask -->
+    <circle cx="103" cy="115" r="16" fill="#ffffff" opacity="0.2"/>
+    <path d="M103 104 L103 126 M92 115 L114 115 M95 107 L111 123 M95 123 L111 107" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Product Label Banner -->
+  <rect x="15" y="152" width="170" height="32" rx="12" fill="#0369a1" filter="url(#tumblerShadow)"/>
+  <text x="100" y="173" font-family="sans-serif" font-weight="900" font-size="11" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">AIR ES (TUMBLER BESAR)</text>
+</svg>
